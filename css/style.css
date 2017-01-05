@@ -4,26 +4,40 @@
 body {
 	width: 100%;
 	margin: 0px;
-	background-color: #AACB46; 
+	background: #fff url('../img/bg-clover.png') repeat;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
+	font-size: 20px;
 }
 .container {
 	width: 956px;
 	margin: 0 auto;
-	outline: 5px solid #A03092;
-	box-shadow: 0px 0px 15px 15px #A03092;
+/*	outline: 5px solid #A03092;*/
+	box-shadow: 0px 0px 25px 15px #c23ab1;
 	background-color: #fff;
 }
 h1 {
-	font-size: 45px;
+	font-family: 'Cormorant', serif;
+	font-weight: bold; 
+	font-size: 80px;
 	text-transform: uppercase;
 	color: #A03092;
 	text-align: center;
 	margin: 0;
-	padding: 50px;
+	padding: 0;
+	padding-top: 10px;
+
 }
 .header {
-	font-size: 20px;
-	color: #AACB46;
+	font-family: 'Cormorant', serif;
+	font-weight: bold; 
+	font-size: 25px;
+	color: #a6ce3a;
+	text-transform: uppercase;
+	text-align: right;
+	padding-right: 85px;
+	margin-bottom: 50px;
+	margin-top: -15px;
 }
 .navigation {
 	padding: 0;
@@ -44,6 +58,12 @@ h1 {
 	color: #AACB46;
 }
 h2 {
+	font-family: 'Cormorant', serif;
+	font-weight: bold; 
+	font-size: 40px;
+/*	text-transform: uppercase;*/
+	color: #A03092;
+	text-align: left;
 	padding: 15px;
 }
 /*.logo {
