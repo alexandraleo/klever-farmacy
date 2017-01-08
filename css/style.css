@@ -13,7 +13,7 @@ body {
 	width: 956px;
 	margin: 0 auto;
 /*	outline: 5px solid #A03092;*/
-	box-shadow: 0px 0px 25px 15px #c23ab1;
+	box-shadow: 0px 0px 25px 5px #c23ab1;
 	background-color: #fff;
 }
 h1 {
@@ -46,34 +46,65 @@ h1 {
 .navigation li {
 	display: inline-block;
 	list-style: none;
+	padding: 0 15px;
 }
 .navigation a {
+	position: relative;
 	text-decoration: none;
+	outline: none;
 	color: #A03092;
-	font-size: 20px;
+	font-size: 25px;
 	cursor: pointer;
-	padding: 15px;
+	padding: 15px 0 5px 0;
+}
+.navigation a::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #a6ce3a;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity 0.3s, transform 0.3s;
+}
+.navigation a:hover::after {
+	opacity: 1;
+	transform: translateY(0px);
+}
+.navigation .active::after {
+	background-color: #A03092;
+	opacity: 1;
+	transform: translateY(0px);
 }
 .navigation .active {
 	color: #AACB46;
 }
+
 h2 {
+	display: inline-block;
 	font-family: 'Cormorant', serif;
 	font-weight: bold; 
 	font-size: 40px;
 /*	text-transform: uppercase;*/
 	color: #A03092;
 	text-align: left;
-	padding: 15px;
+	padding: 15px 0 5px 0;
+	position: relative;
+	margin-left: 15px;
 }
-/*.logo {
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	background: #fff url('../img/clover.png');
+/*h2::after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	background-color: #a6ce3a;
+	width: 100%;
+	top: 100%;
+	left: 0;
 }*/
 .addresses {
-	margin: 0 auto;
+	margin: 0 auto 20px;
 	border-collapse: collapse;
 }
 .addresses td {
@@ -105,3 +136,49 @@ h2 {
 }
 .promo {
 	margin-left: 300px;
+}
+.telephone {
+	text-decoration: none;
+	color: #fff;
+}
+.contacts {
+	background-color: #a6ce3a;
+	color: #fff;
+	margin: 0;
+}
+.contacts div {
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.contacts li {
+	list-style: none;
+
+}
+ .clearfix::after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+ }
+ .contacts a {
+ 	color: #fff;
+ 	text-decoration: none;
+ }
+ .contacts .active {
+ 	color: #A03092;
+ 	font-weight: bold;
+ }
+ h3 {
+ 	margin: 0;
+ }
+ .vacancy {
+ 	padding: 0 15px;
+ 	position: relative;
+ 	min-height: 200px;
+ }
+ .vacancy img {
+ 	position: absolute;
+ }
+ .vacancy p {
+ 	margin-left: 270px;
+ }
