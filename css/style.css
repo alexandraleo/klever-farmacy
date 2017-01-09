@@ -11,8 +11,8 @@ body {
 }
 .container {
 	width: 956px;
+/*	height: 100%;*/
 	margin: 0 auto;
-/*	outline: 5px solid #A03092;*/
 	box-shadow: 0px 0px 25px 5px #c23ab1;
 	background-color: #fff;
 }
@@ -90,9 +90,9 @@ h2 {
 /*	text-transform: uppercase;*/
 	color: #A03092;
 	text-align: left;
-	padding: 15px 0 5px 0;
+	padding: 15px 0 5px 15px;
 	position: relative;
-	margin-left: 15px;
+/*	margin-left: 15px;*/
 }
 /*h2::after {
 	content: "";
@@ -103,6 +103,36 @@ h2 {
 	top: 100%;
 	left: 0;
 }*/
+
+.pharmacy {
+	display: flex;
+	flex-direction: row;
+	outline: 2px solid #a6ce3a;
+	position: relative;
+	margin: 15px;
+}
+.pharmacy-info p {
+	margin: 0;
+}
+.pharmacy .pharmacy-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0 15px;
+}
+.pharmacy-info .city {
+	color: #A03092;
+	font-weight: bold;
+}
+.pharmacy-info .district, 
+.pharmacy-info .subway {
+/*	float: left;*/
+	font-size: 15px;
+	padding-right: 15px;
+}
+
+												/*-----Addresses table-----*/
 .addresses {
 	margin: 0 auto 20px;
 	border-collapse: collapse;
@@ -134,10 +164,13 @@ h2 {
 .closed td {
 	display: none;
 }
+
+												/*-------Promo-------*/
 .promo {
+	float: center;
 	margin-left: 300px;
 }
-.telephone {
+.footer-phone {
 	text-decoration: none;
 	color: #fff;
 }
@@ -153,7 +186,6 @@ h2 {
 }
 .contacts li {
 	list-style: none;
-
 }
  .clearfix::after {
  	content: "";
