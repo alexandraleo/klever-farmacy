@@ -22,10 +22,19 @@
 			</nav>
 			</header>
 			<h2>Наши аптеки</h2>
+			<form class="sorting">
+				<fieldset>
+					<legend>Показать:</legend>
+					<input type="radio" name="sorting-options" id="all" ><label for="all">Все аптеки</label>
+					<label><input type="radio" name="sorting-options" id="spb">Санкт-Петербург</label>
+					<label><input type="radio" name="sorting-options" id="region">Ленинградская область</label>
+					<label><input type="radio" name="sorting-options" id="vyborg">Выборг</label>
+					<label><input type="radio" name="sorting-options" id="kirishi">Кириши</label>
+				</fieldset>	
+			</form>
 			<div class="pharmacy-list">
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№1</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -41,9 +50,8 @@
 						</div>
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№2</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -59,9 +67,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy region">
 					<b class="number">№3</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Петергоф</p>
 						<div class="location hidden">
@@ -77,9 +84,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy vyborg">
 					<b class="number">№6</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Выборг</p>
 						<div class="location hidden">
@@ -95,9 +101,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№8</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -113,9 +118,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№9</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -131,9 +135,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№11</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -149,9 +152,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№12</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -167,9 +169,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy region">
 					<b class="number">№13</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Стрельна</p>
 						<div class="location hidden">
@@ -185,10 +186,9 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<p class="overlay reconstruction">Аптека на реконструкции</p>
 					<b class="number">№15</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -204,9 +204,8 @@
 						</div>	
 					</div>
 				</section>				
-				<section class="pharmacy">
+				<section class="pharmacy kirishi">
 					<b class="number">№18</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Кириши</p>
 						<div class="location hidden">
@@ -222,9 +221,8 @@
 						</div>	
 					</div>
 				</section>					
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№20</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -240,9 +238,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+<!-- 				<section class="pharmacy">
 					<b class="number">№22</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Великий Новгород</p>
 						<div class="location hidden">
@@ -260,7 +257,6 @@
 				</section>	
 				<section class="pharmacy">
 					<b class="number">№25</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Великий Новгород</p>
 						<div class="location hidden">
@@ -275,10 +271,9 @@
 							<p class="mode">9<sup>00</sup> - 22<sup>00</sup></p>
 						</div>	
 					</div>
-				</section>									
-				<section class="pharmacy">
+				</section> -->									
+				<section class="pharmacy spb">
 					<b class="number">№26</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -294,9 +289,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy region">
 					<b class="number">№28</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Сертолово</p>
 						<div class="location hidden">
@@ -312,9 +306,8 @@
 						</div>	
 					</div>
 				</section>					
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№29</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -330,9 +323,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy region">
 					<b class="number">№30</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Шушары</p>
 						<div class="location hidden">
@@ -348,9 +340,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy region">
 					<b class="number">№31</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Бугры</p>
 						<div class="location hidden">
@@ -366,9 +357,8 @@
 						</div>	
 					</div>
 				</section>									
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№32</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -384,9 +374,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№33</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -402,9 +391,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№34</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -420,9 +408,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+<!-- 				<section class="pharmacy">
 					<b class="number">№35</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Кириши</p>
 						<div class="location hidden">
@@ -437,10 +424,10 @@
 							<p class="mode">9<sup>00</sup> - 22<sup>00</sup></p>
 						</div>	
 					</div>
-				</section>
-				<section class="pharmacy">
+				</section> -->
+				<section class="pharmacy region">
+					<p class="overlay new">Скоро открытие</p>
 					<b class="number">№36</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Новое Девяткино</p>
 						<div class="location hidden">
@@ -456,9 +443,8 @@
 						</div>	
 					</div>
 				</section>									
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№37</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">
@@ -474,9 +460,8 @@
 						</div>	
 					</div>
 				</section>
-				<section class="pharmacy">
+				<section class="pharmacy spb">
 					<b class="number">№38</b>
-					<img src="https://placehold.it/200x150" width="200" height="150">
 					<div class="pharmacy-info">
 						<p class="city">Санкт-Петербург</p>
 						<div class="location">

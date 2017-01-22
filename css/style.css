@@ -112,19 +112,40 @@ h2 {
 	top: 100%;
 	left: 0;
 }*/
+.sorting fieldset {
+	border: none;
+	outline: none;
+}
+.sorting label {
+	position: relative;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	color: #A03092;
+}
+input[type="radio"]:checked + label::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	border-top: 2px dashed #a6ce3a;
+	height: 2px;
+	background-color: #fff; 
+}
 .pharmacy-list {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-content: space-between;
+	align-content: space-around;
 }
 .pharmacy {
 	display: flex;
 	flex-direction: row;
 	justify-content: stretch;
 	align-items: stretch;
-	width: 500px;
+	width: 30%;
 	outline: 2px solid #a6ce3a;
 	position: relative;
 	margin: 15px;
@@ -143,12 +164,11 @@ h2 {
 }
 .pharmacy .pharmacy-info {
 	display: flex;
-	width: 300px;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: space-between;
 	margin: 0;
-	padding: 0 15px;
+	padding: 5px 15px;
 }
 .pharmacy-info .city {
 	color: #A03092;
@@ -167,8 +187,8 @@ h2 {
 .pharmacy .number {
 	position: absolute;
 	margin: 0;
-	top: 0;
-	left: 0;
+	top: -2px;
+	right: -2px;
 	width: 40px;
 	height: 40px;
 	text-align: center;
@@ -177,7 +197,7 @@ h2 {
 	line-height: 35px;
 	font-weight: bold;
 	background-color: #a6ce3a;
-	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
 	color: #fff;
 }
 .pharmacy-info .hidden {
@@ -193,17 +213,17 @@ h2 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	order: 0;
 	background-color: #a6ce3a;
 	opacity: 0.9;
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 10px 0 0 0;
 	text-align: center;
 	vertical-align: middle;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 35px;
+	line-height: 40px;
 	color: #fff;
 	text-shadow: 0px 0px 15px #A03092;
 }
@@ -212,6 +232,9 @@ h2 {
 }
 .overlay ~ .number {
 	background-color: #A03092;
+}
+.overlay.new {
+ padding-top: 25px;
 }
 
 
