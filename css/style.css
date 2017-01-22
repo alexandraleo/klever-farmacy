@@ -112,7 +112,33 @@ h2 {
 	top: 100%;
 	left: 0;
 }*/
-.sorting fieldset {
+.sorting-target {
+	position: fixed;
+}
+.sorting-link {
+	position: relative;
+	text-decoration: none;
+	color: #A03092;
+	margin: 5px;
+}
+.sorting-link:hover::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #a6ce3a;
+	width: 100%;
+	top: 100%;
+	left: 0;
+}
+.sorting-target:not(:target) ~ .pharmacy {
+	visibility: visible;
+	opacity: 1;
+}
+.sorting-target:target ~ .pharmacy {
+	visibility: hidden;
+	opacity: 0;
+}
+/*.sorting fieldset {
 	border: none;
 	outline: none;
 }
@@ -132,7 +158,7 @@ input[type="radio"]:checked + label::after {
 	border-top: 2px dashed #a6ce3a;
 	height: 2px;
 	background-color: #fff; 
-}
+}*/
 .pharmacy-list {
 	display: flex;
 	flex-direction: row;
