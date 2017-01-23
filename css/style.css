@@ -112,27 +112,54 @@ h2 {
 	top: 100%;
 	left: 0;
 }*/
-.sorting fieldset {
-	border: none;
-	outline: none;
+.sorting-links {
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 15px;
 }
-.sorting label {
+.sorting-target {
+	position: fixed;
+}
+.sorting-link {
 	position: relative;
-	font-family: 'PT Sans', sans-serif;
-	font-weight: normal;
-	font-size: 24px;
+	text-decoration: none;
 	color: #A03092;
+	margin-right: 20px;
 }
-input[type="radio"]:checked + label::after {
+.sorting-link:hover::after {
 	content: "";
 	position: absolute;
+	height: 2px;
+	background-color: #a6ce3a;
 	width: 100%;
 	top: 100%;
 	left: 0;
-	border-top: 2px dashed #a6ce3a;
-	height: 2px;
-	background-color: #fff; 
 }
+.sorting-target:not(:target) ~ .pharmacy {
+	visibility: visible;
+	display: flex;
+}
+.sorting-target:target ~ .pharmacy {
+	display: none;
+}
+[id="tag:all"]:target ~ [data-tag~="all"],
+[id="tag:spb"]:target ~ [data-tag~="spb"], 
+[id="tag:region"]:target ~ [data-tag~="region"], 
+[id="tag:vyborg"]:target ~ [data-tag~="vyborg"], 
+[id="tag:kirishi"]:target ~ [data-tag~="kirishi"] {
+	display: flex;
+}
+[id="tag:all"]:target ~ .sorting-links [href="#tag:all"],
+[id="tag:spb"]:target ~ .sorting-links [href="#tag:spb"], 
+[id="tag:region"]:target ~ .sorting-links [href="#tag:region"], 
+[id="tag:vyborg"]:target ~ .sorting-links [href="#tag:vyborg"], 
+[id="tag:kirishi"]:target ~ .sorting-links [href="#tag:kirishi"] {
+	color: #a6ce3a;
+	border-bottom: 2px dashed #A03092;
+}
+
 .pharmacy-list {
 	display: flex;
 	flex-direction: row;
@@ -164,6 +191,7 @@ input[type="radio"]:checked + label::after {
 }
 .pharmacy .pharmacy-info {
 	display: flex;
+	flex-basis: 100%;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: space-between;
