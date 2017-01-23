@@ -112,6 +112,13 @@ h2 {
 	top: 100%;
 	left: 0;
 }*/
+.sorting-links {
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin: 15px;
+}
 .sorting-target {
 	position: fixed;
 }
@@ -119,7 +126,7 @@ h2 {
 	position: relative;
 	text-decoration: none;
 	color: #A03092;
-	margin: 5px;
+	margin-right: 20px;
 }
 .sorting-link:hover::after {
 	content: "";
@@ -132,33 +139,27 @@ h2 {
 }
 .sorting-target:not(:target) ~ .pharmacy {
 	visibility: visible;
-	opacity: 1;
+	display: flex;
 }
 .sorting-target:target ~ .pharmacy {
-	visibility: hidden;
-	opacity: 0;
+	display: none;
 }
-/*.sorting fieldset {
-	border: none;
-	outline: none;
+[id="tag:all"]:target ~ [data-tag~="all"],
+[id="tag:spb"]:target ~ [data-tag~="spb"], 
+[id="tag:region"]:target ~ [data-tag~="region"], 
+[id="tag:vyborg"]:target ~ [data-tag~="vyborg"], 
+[id="tag:kirishi"]:target ~ [data-tag~="kirishi"] {
+	display: flex;
 }
-.sorting label {
-	position: relative;
-	font-family: 'PT Sans', sans-serif;
-	font-weight: normal;
-	font-size: 24px;
-	color: #A03092;
+[id="tag:all"]:target ~ .sorting-links [href="#tag:all"],
+[id="tag:spb"]:target ~ .sorting-links [href="#tag:spb"], 
+[id="tag:region"]:target ~ .sorting-links [href="#tag:region"], 
+[id="tag:vyborg"]:target ~ .sorting-links [href="#tag:vyborg"], 
+[id="tag:kirishi"]:target ~ .sorting-links [href="#tag:kirishi"] {
+	color: #a6ce3a;
+	border-bottom: 2px dashed #A03092;
 }
-input[type="radio"]:checked + label::after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	top: 100%;
-	left: 0;
-	border-top: 2px dashed #a6ce3a;
-	height: 2px;
-	background-color: #fff; 
-}*/
+
 .pharmacy-list {
 	display: flex;
 	flex-direction: row;
@@ -190,6 +191,7 @@ input[type="radio"]:checked + label::after {
 }
 .pharmacy .pharmacy-info {
 	display: flex;
+	flex-basis: 100%;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: space-between;
