@@ -172,7 +172,7 @@ h2 {
 	flex-direction: row;
 	justify-content: stretch;
 	align-items: stretch;
-	width: 30%;
+	flex-basis: 30%;
 	outline: 2px solid #a6ce3a;
 	position: relative;
 	margin: 15px;
@@ -180,7 +180,7 @@ h2 {
 .pharmacy-info p {
 	margin: 0;
 }
-.pharmacy-info a {
+.pharmacy-info a, .phone {
 	text-decoration: none;
 	color: #000;
 	font-weight: bold;
@@ -189,7 +189,7 @@ h2 {
 	font-size: 12px;
 	text-decoration: underline;
 }
-.pharmacy .pharmacy-info {
+.pharmacy-info {
 	display: flex;
 	flex-basis: 100%;
 	flex-direction: column;
@@ -212,7 +212,7 @@ h2 {
 	flex-direction: row;
 	justify-content: flex-start;
 }
-.pharmacy .number {
+.number {
 	position: absolute;
 	margin: 0;
 	top: -2px;
@@ -265,7 +265,7 @@ h2 {
  padding-top: 25px;
 }
 
-
+/* Футер переписать уже на флекс */
 
 									/*---------Footer---------*/
 .contacts {
@@ -311,14 +311,27 @@ h2 {
 	display: flex;
 	margin: auto;
 }
- .vacancy {
- 	padding: 0 15px;
- 	position: relative;
- 	min-height: 200px;
- }
- .vacancy img {
- 	position: absolute;
- }
- .vacancy p {
- 	margin-left: 270px;
- }
+.vacancy-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+		flex-basis: 75%;
+}
+.vacancy {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-basis: 75%;
+	outline: 2px solid #A03092;
+	position: relative;
+	margin: 15px;
+}
+.vacancy .number {
+	background-color: #A03092;
+}
+/* .vacancy .pharmacy-info {
+	padding-left: 335px;
+} */
