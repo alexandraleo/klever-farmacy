@@ -112,12 +112,19 @@ h2 {
 	top: 100%;
 	left: 0;
 }*/
+.map {
+	align-self: center;
+	margin: 20px;
+}
 .sorting-links {
 	display: flex;
 	flex-basis: 100%;
 	flex-direction: row;
-	justify-content: flex-start;
-	margin: 15px;
+	justify-content: center;
+	margin: 20px 15px 10px;
+	padding: 15px;
+	background-color: #e4f1c5;
+	font-weight: bold;
 }
 .sorting-target {
 	position: fixed;
@@ -273,14 +280,15 @@ h2 {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #a6ce3a;
-	color: #fff;
+	background-color: #e4f1c5;
+	color: #A03092;
+	font-weight: bold;
 	margin: 20px 0 0 0;
-	text-shadow: 1px 0px 5px #A03092;
+/* 	text-shadow: 1px 0px 5px #A03092; */
 }
 .footer-phone {
 	text-decoration: none;
-	color: #fff;
+	color: #A03092;
 }
 
 .contacts div {
@@ -291,17 +299,12 @@ h2 {
 .contacts li {
 	list-style: none;
 }
-/* .clearfix::after {
- 	content: "";
- 	display: table;
- 	clear: both;
- }*/
  .contacts a {
- 	color: #fff;
+ 	color: #A03092;
  	text-decoration: none;
  }
  .contacts .active {
- 	color: #A03092;
+ 	color: #a6ce3a;
  	font-weight: bold;
  	text-shadow: 1px -1px 5px #fff;
  }
@@ -309,29 +312,66 @@ h2 {
  												/*-------Promo-------*/
 .promo {
 	display: flex;
-	margin: auto;
+	align-self: center;
+	margin: 10px auto;
 }
+												/* ---------Vacancy-------- */
 .vacancy-list {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: space-around;
-		flex-basis: 75%;
+/* 	flex-basis: 100%; */
 }
 .vacancy {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-content: space-between;
-	flex-basis: 75%;
-	outline: 2px solid #A03092;
+	align-content: space-around;
+	flex-basis: 700px;
+	border: 2px solid #A03092;
 	position: relative;
-	margin: 15px;
+	margin: 15px 0;
 }
 .vacancy .number {
 	background-color: #A03092;
 }
-/* .vacancy .pharmacy-info {
-	padding-left: 335px;
-} */
+.vacancy-text {
+	align-self: center;
+}
+.vacancy-text ul,
+.vacancy-text p {
+	margin: 5px;
+}
+.advantages {
+	border-left: 2px solid #a6ce3a;
+}
+.vacancy-name {
+	color: #A03092;
+/* 	font-weight: bold; */
+	font-size: 24px;
+}
+.vacancy-description {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.conditions, 
+.advantages {
+	padding: 15px;
+	align-self: center;
+	flex-basis: 50%;
+}
+.hr-contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 100%;
+	border-top: 2px solid #a6ce3a;
+}
+.hr-contacts li {
+	list-style: none;
+}
