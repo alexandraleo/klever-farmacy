@@ -5,7 +5,6 @@ html {
 	min-height: 100%;
 }
 body {
-	width: 100%;
 	margin: 0px;
 	background: #fff url('../img/bg-clover.png') repeat;
 	font-family: 'PT Sans', sans-serif;
@@ -15,14 +14,23 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 1100px;
+	width: 1200px;
 	margin: 0 auto;
-	box-shadow: 0px 0px 25px 5px #c23ab1;
+/* 	box-shadow: 0px 0px 25px 5px #c23ab1; */
+	border-left: 5px solid #c23ab1;
+	border-right: 5px solid #c23ab1;
 	background-color: #fff;
 }
 main {
 	display: flex;
 	flex-direction: column;
+	background-color: #fff;
+	padding-bottom: 20px;
+}
+header {
+	background-color: #fff;
+	padding-bottom: 30px;
+	padding-top: 15px;
 }
 h1 {
 	font-family: 'Cormorant', serif;
@@ -94,6 +102,7 @@ h1 {
 }
 .main {
 	background-color: #fff;
+	flex-grow: 1;
 }
 
 h2 {
@@ -291,7 +300,6 @@ h2 {
 	background-color: #e4f1c5;
 	color: #A03092;
 	font-weight: bold;
-	margin: 20px 0 0 0;
 /* 	text-shadow: 1px 0px 5px #A03092; */
 }
 .footer-phone {
