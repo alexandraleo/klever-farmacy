@@ -92,6 +92,9 @@ h1 {
 .navigation .active {
 	color: #AACB46;
 }
+.main {
+	background-color: #fff;
+}
 
 h2 {
 	display: inline-block;
