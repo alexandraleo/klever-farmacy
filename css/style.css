@@ -3,6 +3,8 @@
 }
 html {
 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 body {
 	margin: 0px;
@@ -41,8 +43,6 @@ h1 {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	padding-top: 10px;
-
 }
 .logo-block {
 	align-self: space-around;
@@ -208,6 +208,7 @@ h2 {
 	text-decoration: none;
 	color: #000;
 	font-weight: bold;
+	padding-bottom: 5px;
 }
 .pharmacy-contacts sup {
 	font-size: 12px;
@@ -391,6 +392,39 @@ h2 {
 .hr-contacts li {
 	list-style: none;
 }
-/*.vacancy img {
-	flex-basis: 250px;
-}*/
+.communication {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+	align-self: center;
+	width: 75%;
+}
+.communication div {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.communication p {
+	margin: 0;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.office, .hr-department {
+	border-bottom: 2px solid #a6ce3a;
+}
+.office, .hot-link {
+	border-right: 2px solid #a6ce3a;
+}
+.contact-type {
+	font-size: 24px;
+	color: #A03092;
+}
+.email {
+	color: #000;
+	text-decoration: none;
+}
