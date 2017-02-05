@@ -137,13 +137,20 @@ h2 {
 }
 .sorting-links {
 	display: flex;
-	flex-basis: 100%;
-	flex-direction: row;
-	justify-content: center;
+	flex-basis: 30%;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	align-self: flex-end;
 	margin: 20px 15px 10px;
 	padding: 15px;
+	padding-left: 30px;
 	background-color: #e4f1c5;
 	font-weight: bold;
+}
+.lenobl {
+	display: none;
+	margin-left: 60px;
 }
 .sorting-target {
 	position: fixed;
@@ -174,17 +181,61 @@ h2 {
 [id="tag:spb"]:target ~ [data-tag~="spb"], 
 [id="tag:region"]:target ~ [data-tag~="region"], 
 [id="tag:vyborg"]:target ~ [data-tag~="vyborg"], 
-[id="tag:kirishi"]:target ~ [data-tag~="kirishi"] {
+[id="tag:kirishi"]:target ~ [data-tag~="kirishi"],
+[id="tag:bugry"]:target ~ [data-tag~="bugry"], 
+[id="tag:devyatkino"]:target ~ [data-tag~="devyatkino"], 
+[id="tag:sertolovo"]:target ~ [data-tag~="sertolovo"] {
 	display: flex;
 }
 [id="tag:all"]:target ~ .sorting-links [href="#tag:all"],
 [id="tag:spb"]:target ~ .sorting-links [href="#tag:spb"], 
 [id="tag:region"]:target ~ .sorting-links [href="#tag:region"], 
 [id="tag:vyborg"]:target ~ .sorting-links [href="#tag:vyborg"], 
-[id="tag:kirishi"]:target ~ .sorting-links [href="#tag:kirishi"] {
+[id="tag:kirishi"]:target ~ .sorting-links [href="#tag:kirishi"],
+[id="tag:bugry"]:target ~ .sorting-links [href="#tag:bugry"], 
+[id="tag:devyatkino"]:target ~ .sorting-links [href="#tag:devyatkino"], 
+[id="tag:sertolovo"]:target ~ .sorting-links [href="#tag:sertolovo"] {
 	color: #a6ce3a;
 	border-bottom: 2px dashed #A03092;
 }
+[id="tag:vyborg"]:target ~ .sorting-links [class~="lenobl"],
+[id="tag:kirishi"]:target ~ .sorting-links [class~="lenobl"],
+[id="tag:bugry"]:target ~ .sorting-links [class~="lenobl"],
+[id="tag:devyatkino"]:target ~ .sorting-links [class~="lenobl"],
+[id="tag:sertolovo"]:target ~ .sorting-links [class~="lenobl"],
+[id="tag:region"]:target ~ .sorting-links [class~="lenobl"] {
+	display: flex;
+}
+[id="tag:vyborg"]:target ~ .map,
+[id="tag:kirishi"]:target ~ .map,
+[id="tag:bugry"]:target ~ .map,
+[id="tag:devyatkino"]:target ~ .map,
+[id="tag:sertolovo"]:target ~ .map {
+	display: none;
+}
+.vyborg-map, 
+.bugry-map, 
+.kirishi-map, 
+.sertolovo-map,
+.devyatkino-map {
+	display: none;
+}
+[id="tag:vyborg"]:target ~ .vyborg-map {
+	display: flex;
+}
+[id="tag:bugry"]:target ~ .bugry-map {
+	display: flex;
+}
+[id="tag:kirishi"]:target ~ .kirishi-map {
+	display: flex;
+}
+[id="tag:sertolovo"]:target ~ .sertolovo-map {
+	display: flex;
+}
+[id="tag:devyatkino"]:target ~ .devyatkino-map {
+	display: flex;
+}
+
 
 .pharmacy-list {
 	display: flex;
@@ -429,4 +480,10 @@ h2 {
 .email {
 	color: #000;
 	text-decoration: none;
+}
+.office-map {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }

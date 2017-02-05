@@ -24,22 +24,43 @@
 		</header>
 		<main>
 <!-- 			<h2>Наши аптеки</h2> -->
-		<div class="map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NN6G50mvBkakhd7rn3AbOWwFkHNCCx0_&amp;width=750&amp;height=600&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-		</div>
-		<div class="pharmacy-list">
-			<a id="tag:all" class="sorting-target"></a>
-			<a id="tag:spb" class="sorting-target"></a>
-			<a id="tag:region" class="sorting-target"></a>
-			<a id="tag:vyborg" class="sorting-target"></a>
-			<a id="tag:kirishi" class="sorting-target"></a>
-			<section class="sorting-links">
-				<a href="#tag:all" class="sorting-link">Все аптеки</a>
-				<a href="#tag:spb" class="sorting-link">Санкт-Петербург</a>
-				<a href="#tag:region" class="sorting-link">Ленинградская область</a>
-				<a href="#tag:vyborg" class="sorting-link">Выборг</a>
-				<a href="#tag:kirishi" class="sorting-link">Кириши</a>
-			</section>	
+				<div class="pharmacy-list">
+					<a id="tag:all" class="sorting-target"></a>
+					<a id="tag:spb" class="sorting-target"></a>
+					<a id="tag:region" class="sorting-target"></a>
+					<a id="tag:bugry" class="sorting-target"></a>
+					<a id="tag:vyborg" class="sorting-target"></a>
+					<a id="tag:kirishi" class="sorting-target"></a>
+					<a id="tag:devyatkino" class="sorting-target"></a>
+					<a id="tag:sertolovo" class="sorting-target"></a>			
+					<section class="sorting-links">
+						<a href="#tag:all" class="sorting-link">Все аптеки</a>
+						<a href="#tag:spb" class="sorting-link">Санкт-Петербург</a>
+						<a href="#tag:region" class="sorting-link">Ленинградская область</a>
+						<a href="#tag:bugry" class="sorting-link lenobl">Бугры</a>
+						<a href="#tag:vyborg" class="sorting-link lenobl">Выборг</a>
+						<a href="#tag:kirishi" class="sorting-link lenobl">Кириши</a>
+						<a href="#tag:devyatkino" class="sorting-link lenobl">Новое Девяткино</a>
+						<a href="#tag:sertolovo" class="sorting-link lenobl">Сертолово</a>
+					</section>
+				<div class="map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=NN6G50mvBkakhd7rn3AbOWwFkHNCCx0_&amp;width=700&amp;height=600&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+				</div>
+				<div class="bugry-map">
+					<a href="https://yandex.ru/maps/?um=constructor%3AQMY7lzq28Xx0iHg8Wzh6SdhhxHOD0XSa&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=QMY7lzq28Xx0iHg8Wzh6SdhhxHOD0XSa&amp;width=600&amp;height=450&amp;lang=ru_RU&amp;sourceType=constructor" alt="" style="border: 0;" /></a>
+				</div>				
+				<div class="vyborg-map">
+					<a href="https://yandex.ru/maps/?um=constructor%3AxdHi-XCdvZDEy3H6JbbbKoRVKLALlTYD&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=xdHi-XCdvZDEy3H6JbbbKoRVKLALlTYD&amp;width=600&amp;height=450&amp;lang=ru_RU&amp;sourceType=constructor" alt="" style="border: 0;" /></a>
+				</div>
+				<div class="kirishi-map">
+					<a href="https://yandex.ru/maps/?um=constructor%3AUc8JJ4lHV63qw1lWMBDLyc8L6pkQ4uzJ&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=Uc8JJ4lHV63qw1lWMBDLyc8L6pkQ4uzJ&amp;width=600&amp;height=450&amp;lang=ru_RU&amp;sourceType=constructor" alt="" style="border: 0;" /></a>
+				</div>
+				<div class="sertolovo-map">
+					<a href="https://yandex.ru/maps/?um=constructor%3A21Wk50D65Bd1T-SuslspJDiYpPtjxy-L&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=21Wk50D65Bd1T-SuslspJDiYpPtjxy-L&amp;width=600&amp;height=450&amp;lang=ru_RU&amp;sourceType=constructor" alt="" style="border: 0;" /></a>
+				</div>
+				<div class="devyatkino-map">
+					<a href="https://yandex.ru/maps/?um=constructor%3AagVSbo1faViBcjg5oOqDmF3YoirAigSg&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=agVSbo1faViBcjg5oOqDmF3YoirAigSg&amp;width=600&amp;height=450&amp;lang=ru_RU&amp;sourceType=constructor" alt="" style="border: 0;" /></a>
+				</div>
 			<section class="pharmacy spb" data-tag="all spb">
 				<b class="number">№1</b>
 				<div class="pharmacy-info">
@@ -296,7 +317,7 @@
 					</div>	
 				</div>
 			</section>
-			<section class="pharmacy region" data-tag="all region">
+			<section class="pharmacy region" data-tag="all region sertolovo">
 				<b class="number">№28</b>
 				<div class="pharmacy-info">
 					<p class="city">Сертолово</p>
@@ -347,7 +368,7 @@
 					</div>	
 				</div>
 			</section>
-			<section class="pharmacy region" data-tag="all region">
+			<section class="pharmacy region" data-tag="all region bugry">
 				<b class="number">№31</b>
 				<div class="pharmacy-info">
 					<p class="city">Бугры</p>
@@ -432,7 +453,7 @@
 					</div>	
 				</div>
 			</section> -->
-			<section class="pharmacy region" data-tag="all region">
+			<section class="pharmacy region" data-tag="all region devyatkino">
 				<p class="overlay new">Скоро открытие</p>
 				<b class="number">№36</b>
 				<div class="pharmacy-info">
