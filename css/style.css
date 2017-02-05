@@ -481,6 +481,9 @@ h2 {
 	color: #000;
 	text-decoration: none;
 }
+.email:hover {
+	font-weight: bold;
+}
 .office-map {
 	display: flex;
 	flex-direction: row;
