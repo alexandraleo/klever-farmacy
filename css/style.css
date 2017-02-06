@@ -354,21 +354,22 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	align-items: stretch;
 	background-color: #e4f1c5;
 	color: #A03092;
 	font-weight: bold;
+	padding: 20px 0px;
 /* 	text-shadow: 1px 0px 5px #A03092; */
+}
+.menu, .hotline, .hr {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 .footer-phone {
 	text-decoration: none;
 	color: #A03092;
-}
-
-.contacts div {
-	float: left;
-	width: 33%;
-	text-align: center;
 }
 .contacts li {
 	list-style: none;
