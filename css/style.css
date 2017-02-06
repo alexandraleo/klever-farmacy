@@ -28,6 +28,7 @@ main {
 	flex-direction: column;
 	background-color: #fff;
 	padding-bottom: 20px;
+	flex-grow: 1;
 }
 header {
 	background-color: #fff;
@@ -131,10 +132,12 @@ h2 {
 	top: 100%;
 	left: 0;
 }*/
-.map {
-	align-self: center;
-	margin: 20px;
-}
+ .map {
+	align-self: flex-end;
+/* 	margin: 20px; */
+	padding: 15px;
+	padding-bottom: 12px;
+} 
 .sorting-links {
 	display: flex;
 	flex-basis: 30%;
@@ -142,7 +145,7 @@ h2 {
 	justify-content: flex-end;
 	align-items: flex-start;
 	align-self: flex-end;
-	margin: 20px 15px 10px;
+	margin: 20px 15px 10px 30px;
 	padding: 15px;
 	padding-left: 30px;
 	background-color: #e4f1c5;
@@ -249,7 +252,7 @@ h2 {
 	flex-direction: row;
 	justify-content: stretch;
 	align-items: stretch;
-	flex-basis: 30%;
+ 	flex-basis: 30%; 
 	outline: 2px solid #a6ce3a;
 	position: relative;
 	margin: 15px;
@@ -347,6 +350,7 @@ h2 {
 
 									/*---------Footer---------*/
 .contacts {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -386,32 +390,15 @@ h2 {
 	margin: 10px auto;
 }
 												/* ---------Vacancy-------- */
-.vacancy-list {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-around;
-/* 	flex-basis: 100%; */
-}
-.vacancy {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: space-around;
-	flex-basis: 700px;
-	border: 2px solid #A03092;
-	position: relative;
-	margin: 15px 0;
-}
-.vacancy .number {
-	background-color: #A03092;
-}
 .vacancy-text {
 	align-self: center;
+	margin: 0 auto;
+	padding-bottom: 15px;
 }
 .vacancy-text ul,
-.vacancy-text p {
+.vacancy-text p,
+.hr-contacts p,
+.hr-contacts ul {
 	margin: 5px;
 }
 .advantages {
@@ -423,10 +410,13 @@ h2 {
 	font-size: 24px;
 }
 .vacancy-description {
+	width: 75%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: nowrap;
+	margin: 0 auto;
 }
 .conditions, 
 .advantages {
@@ -435,32 +425,34 @@ h2 {
 	flex-basis: 50%;
 }
 .hr-contacts {
+	padding-top: 15px;
+	width: 75%;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	flex-basis: 100%;
+	justify-content: flex-start;
 	border-top: 2px solid #a6ce3a;
 }
 .hr-contacts li {
 	list-style: none;
 }
 .communication {
+/* 	width: 100%; */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 20px;
-	align-self: center;
-	width: 75%;
+	align-self: space-between;
 }
 .communication div {
-	flex-basis: 50%;
+	flex-basis: 45%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px;
+	padding: 15px;
 }
 .communication p {
 	margin: 0;
