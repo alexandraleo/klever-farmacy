@@ -482,3 +482,15 @@ h2 {
 	justify-content: center;
 	align-items: center;
 }
+/* .icon {
+	content: "";
+	width: 30px;
+	height: 30px;
+	border: 2px solid green;
+	background-color: #fff;
+	font-size: 0;
+	padding: 15px;
+}
+.email {
+	background: #fff url("img/email.png") no-repeat;
+} */
