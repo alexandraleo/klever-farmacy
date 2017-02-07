@@ -487,16 +487,16 @@ h2 {
 	width: 30px;
 	height: 30px;
 	border: 2px solid #a6ce3a;
-	background-color: #fff;
+	background: #fff url('img/email.png') center no-repeat;
 	font-size: 0;
  	padding: 15px; 
 	position: relative;
 }
-.email:before {
+/*.email:before {
 	content: "";
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-image: url("img/sprite.png");
-} 
+	background-image: url("img/email.png");
+} */
