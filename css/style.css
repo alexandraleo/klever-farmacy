@@ -149,6 +149,8 @@ h2 {
 	padding: 15px;
 	padding-left: 30px;
 	background-color: #e4f1c5;
+	border: 1px solid #e4f1c5;
+	border-radius: 10px;
 	font-weight: bold;
 }
 .lenobl {
@@ -253,7 +255,8 @@ h2 {
 	justify-content: stretch;
 	align-items: stretch;
  	flex-basis: 30%; 
-	outline: 2px solid #a6ce3a;
+	border: 2px solid #a6ce3a;
+	border-radius: 5px;
 	position: relative;
 	margin: 15px;
 }
@@ -307,6 +310,7 @@ h2 {
 	font-weight: bold;
 	background-color: #a6ce3a;
 	border-bottom-left-radius: 50%;
+	border-top-right-radius: 5px; 
 	color: #fff;
 }
 .pharmacy-info .hidden {
@@ -316,7 +320,7 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+ 	align-items: baseline; 
 }
 .overlay {
 	position: absolute;
@@ -367,6 +371,9 @@ h2 {
 	justify-content: space-around;
 	align-items: center;
 }
+.hr {
+	justify-content: flex-start;
+}
 .footer-phone {
 	text-decoration: none;
 	color: #A03092;
@@ -375,13 +382,17 @@ h2 {
 	list-style: none;
 }
  .contacts a {
- 	color: #A03092;
- 	text-decoration: none;
- }
+	color: #A03092;
+	text-decoration: none;
+} 
  .contacts .active {
  	color: #a6ce3a;
  	font-weight: bold;
  	text-shadow: 1px -1px 5px #fff;
+ }
+ .contacts p {
+ 	margin: 0;
+ 	margin-bottom: 15px;
  }
 
  												/*-------Promo-------*/
@@ -483,20 +494,20 @@ h2 {
 	justify-content: center;
 	align-items: center;
 }
- .icon {
-	width: 30px;
-	height: 30px;
-	border: 2px solid #a6ce3a;
-	background: #fff url('img/email.png') center no-repeat;
-	font-size: 0;
- 	padding: 15px; 
-	position: relative;
+.icon {
+	fill: currentColor;
+ 	width: 18px;
+ 	height: 18px;
+	vertical-align: -0.15em;
+	overflow: hidden;
+	margin-right: 5px;
 }
-/*.email:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-image: url("img/email.png");
-} */
+.contacts .icon-email, .contacts .icon-vk {
+	margin-top: 10px;
+	width: 40px;
+	height: 40px;
+ 	padding: 5px;
+	background-color: #fff;
+	border: 2px solid #a6ce3a;
+	border-radius: 5px;
+}
