@@ -1,34 +1,27 @@
 * {
 	box-sizing: border-box;
 }
-html {
-	min-height: 100%;
+body {
 	display: flex;
 	flex-direction: column;
-}
-body {
-	margin: 0px;
+	width: 1200px;
+	min-height: 100vh;
+	margin: 0 auto;
 	background: #fff url('../img/bg-clover.png') repeat;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: normal;
 	font-size: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 1200px;
-	margin: 0 auto;
-/* 	box-shadow: 0px 0px 25px 5px #c23ab1; */
 	border-left: 5px solid #c23ab1;
 	border-right: 5px solid #c23ab1;
-	background-color: #fff;
 }
 main {
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
 	padding-bottom: 20px;
-	flex-grow: 1;
+ 	flex-grow: 1;
+	flex-shrink: 0; 
+	min-height: 100%;
 }
 header {
 	background-color: #fff;
@@ -452,6 +445,8 @@ h2 {
 .communication {
 /* 	width: 100%; */
 	display: flex;
+	flex-shrink: 0;
+	flex-grow: 1;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
